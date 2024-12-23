@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Get a Quote</title>
+  <link rel="stylesheet" href="styles.css"> <!-- Link to your CSS file -->
+</head>
+<body>
+  <nav class="navbar">
+    <div class="logo">
+        <img src="logo.png" alt="Logo" />
+        <span class="company-name">BHAGAT GROUP OF CONSTRUCTION</span>
+      </div>
+      
+    <ul class="nav-links">
+      <li><a href="index.html">Home</a></li>
+      <li><a href="services.html">Services</a></li>
+      <li><a href="#recent-projects">Projects</a></li>
+      <li><a href="aboutus.html">About Us</a></li>
+      <li><a href="#contact-us">Contact Us</a></li>
+    </ul>
+    
+    
+  </nav>
+
+  <!-- Get a Quote Form Section -->
+  <section class="quote-form-section">
+    <div class="overlay">
+      <form action="submit-quote.php" method="POST" class="quote-form">
+        <h2>Get a Quote</h2>
+        <div class="form-group">
+          <label for="name">Your Name</label>
+          <input type="text" id="name" name="name" required placeholder="Enter your full name">
+        </div>
+
+        <div class="form-group">
+          <label for="email">Email Address</label>
+          <input type="email" id="email" name="email" required placeholder="Enter your email address">
+        </div>
+
+        <div class="form-group">
+          <label for="phone">Phone Number</label>
+          <input type="tel" id="phone" name="phone" required placeholder="Enter your phone number">
+        </div>
+
+        <div class="form-group">
+          <label for="service">Service Required</label>
+          <select id="service" name="service" required>
+            <option value="">Select Service</option>
+            <option value="Construction">Construction</option>
+            <option value="Renovation">Renovation</option>
+            <option value="Design & Build">Design & Build</option>
+            <option value="Consulting">Consulting</option>
+          </select>
+        </div>
+
+        <div class="form-group">
+          <label for="details">Additional Details</label>
+          <textarea id="details" name="details" rows="4" placeholder="Provide more details about your requirements"></textarea>
+        </div>
+
+        <button type="submit" class="submit-btn">Submit</button>
+      </form>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="footer-content">
+      <p>Contact Us:</p>
+      <p>+977 - 9860399470, +977 - 9801532970</p>
+      <p>Email: <a href="mailto:bhagatgrouppvt@gmail.com">bhagatgrouppvt@gmail.com</a></p>
+      <p>Address: Kathmandu-10, New Baneshwor, Bagmati Province, Nepal</p>
+      <p>Branch Office: Bardibas, Mahottari</p>
+    </div>
+    <div class="footer-map">
+      <iframe 
+        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3532.7265097205957!2d85.8927176750324!3d26.987140258805575!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x39ec730070849ad5%3A0xb88187576762c4f9!2sBhagat%20Group%20of%20Construction!5e0!3m2!1sen!2snp!4v1234567890"
+        width="100%" height="200" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+    </div>
+    <p>&copy; 2024 Bhagat Group of Construction Pvt. Ltd. All rights reserved.</p>
+  </footer>
+
+  <!-- Styles -->
+  <style>
+    /* Background and Form Section */
+    .quote-form-section {
+      position: relative;
+      background-image: url('quotebg.jpg'); /* Replace with your image path */
+      background-size: cover;
+      background-position: center;
+      padding: 60px 20px;
+    }
+
+    .overlay {
+      background-color: rgba(0, 0, 0, 0.6); /* Add a dark overlay */
+      padding: 30px;
+      border-radius: 10px;
+      max-width: 800px;
+      margin: 0 auto;
+      color: #fff;
+    }
+
+    .quote-form h2 {
+      text-align: center;
+      margin-bottom: 20px;
+      color: #fff;
+    }
+
+    .form-group {
+      margin-bottom: 15px;
+    }
+
+    .form-group label {
+      display: block;
+      margin-bottom: 5px;
+      color: #fff;
+    }
+
+    .form-group input,
+    .form-group select,
+    .form-group textarea {
+      width: 100%;
+      padding: 10px;
+      font-size: 16px;
+      border-radius: 5px;
+      border: none;
+      box-shadow: 0 0 5px rgba(0, 0, 0, 0.3);
+    }
+
+    .submit-btn {
+      width: 100%;
+      padding: 12px;
+      font-size: 18px;
+      border-radius: 5px;
+      background-color: #4CAF50;
+      color: white;
+      border: none;
+      cursor: pointer;
+      transition: 0.3s;
+    }
+
+    .submit-btn:hover {
+      background-color: #45a049;
+    }
+
+    /* Footer */
+    .footer {
+      background-color: #222;
+      color: #ccc;
+      text-align: center;
+      padding: 20px;
+    }
+
+    .footer-content {
+      margin-bottom: 20px;
+    }
+
+    .footer a {
+      color: #4CAF50;
+      text-decoration: none;
+    }
+
+    .footer a:hover {
+      text-decoration: underline;
+    }
+
+    .footer-map iframe {
+      margin: 10px 0;
+    }
+  </style>
+</body>
+</html>
